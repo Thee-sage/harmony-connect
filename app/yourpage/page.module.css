@@ -1,0 +1,250 @@
+.desktop5Child,
+.desktop5Item {
+  position: absolute;
+  top: 95px;
+  left: 1170px;
+  background-color: #c1ff72;
+  width: 189px;
+  height: 5306px;
+}
+.desktop5Item {
+  top: 146px;
+  left: 30px;
+  border-radius: 76px;
+  background-color: #fff;
+  width: 1350px;
+  height: 238px;
+}
+.come {
+  color: #000;
+}
+.wellCome {
+  position: absolute;
+  top: 153px;
+  left: 126px;
+  font-size: 96px;
+  display: inline-block;
+  width: 361px;
+  height: 103px;
+  color: #00bf4c;
+}
+.desktop5Inner,
+.rectangleDiv {
+  position: absolute;
+  top: 928px;
+  left: 30px;
+  border-radius: 76px;
+  background-color: #000;
+  width: 909px;
+  height: 499px;
+}
+.rectangleDiv {
+  top: 1463px;
+  height: 1206px;
+}
+.one {
+  color: #8fff00;
+}
+.selectOneToContainer {
+  position: absolute;
+  top: 2035px;
+  left: 158px;
+  display: inline-block;
+  width: 500px;
+  color: #d9d9d9;
+}
+.p {
+  margin: 0;
+}
+.div {
+  position: absolute;
+  top: 1689px;
+  left: 191px;
+  display: inline-block;
+  width: 461px;
+}
+.desktop5Child1,
+.desktop5Child2 {
+  position: absolute;
+  top: 406px;
+  left: 30px;
+  border-radius: 76px;
+  width: 909px;
+}
+.desktop5Child1 {
+  background-color: #000;
+  height: 477px;
+}
+.desktop5Child2 {
+  height: 499px;
+}
+.clickOnCommunities,
+.communities {
+  position: absolute;
+  top: 1132px;
+  left: 158px;
+  display: inline-block;
+  width: 461px;
+}
+.communities {
+  top: 1009px;
+  left: 152px;
+  color: #fff;
+  width: 292px;
+  height: 62px;
+}
+.notInOneContainer,
+.yourCommunities {
+  position: absolute;
+  top: 1570px;
+  left: 152px;
+  color: #fff;
+}
+.notInOneContainer {
+  top: 2183px;
+  left: 134px;
+  display: inline-block;
+  width: 649px;
+}
+.bio,
+.name,
+.profilePicture {
+  position: absolute;
+  top: 755px;
+  left: 126px;
+  display: inline-block;
+  width: 544px;
+  height: 52px;
+}
+.bio2 {
+  position: absolute;
+  top: 770px;
+  left: 215px;
+  display: inline-block;
+  width: 544px;
+  font-size: 32px;
+  color: #fff;
+}
+.name,
+.profilePicture {
+  top: 690px;
+  width: 292px;
+}
+.profilePicture {
+  top: 460px;
+  width: 150px; /* Adjust the width and height to your desired size */
+  height: 150px;
+  border-radius: 50%; /* Make the image circular */
+  overflow: hidden; /* Ensure the image stays within the circular boundary */
+}
+
+.name {
+  top: 160px;
+  left: 700px;
+  font-size: 70px;
+  width: 700px;
+  height: 190px;
+}
+.gmail {
+  position: absolute;
+  top: 650px;
+  left: 130px;
+  display: inline-block;
+  width: 544px;
+  height: 52px;
+}
+.gmail2 {
+  position: absolute;
+  top: 667px;
+  left: 370px;
+  display: inline-block;
+  width: 544px;
+  height: 52px;
+  font-size: 32px;
+  color: #fff;
+}
+.gmail3 {
+  position: absolute;
+  top: 716px;
+  left: 270px;
+  display: inline-block;
+  width: 544px;
+  height: 52px;
+  font-size: 32px;
+  color: #fff;
+}
+.gmail4 {
+  position: absolute;
+  top: 700px;
+  left: 126px;
+  display: inline-block;
+  width: 544px;
+  height: 52px;
+}
+.ellipseIcon {
+  position: absolute;
+  top: 490px;
+  left: 320px;
+  width: 156px;
+  height: 155px;
+}
+.clickHereToContainer {
+  position: absolute;
+  top: 2360px;
+  left: 134px;
+  display: inline-block;
+  width: 619px;
+  height: 93px;
+  color: #fff;
+}
+.desktop5 {
+  position: relative;
+  background-color: #00bf4c;
+  width: 1300px;
+  height: 2705px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 48px;
+  color: #8fff00;
+  font-family: Inter;
+}
+
+.createPosts,
+.yourPosts {
+  position: absolute;
+  font-size: 40px;
+  color: #8fff00; /* Set text color to #8fff00 */
+  z-index: 1; /* Set a higher z-index value */
+}
+
+.createPosts {
+  top: 1705px;
+  left: 190px;
+  display: inline-block;
+  width: 283px;
+  height: 75px;
+}
+
+.yourPosts {
+  top: 1833px;
+  left: 199px;
+}
+
+.buttonContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.desktop5Child3,
+.desktop5Child4 {
+  position: absolute;
+  top: 1677px;
+  left: 134px;
+  border-radius: 73.5px;
+  background-color: #353535;
+  width: 362px;
+  height: 96px;
+}
+.desktop5Child4 {
+  top: 1809px;
+}

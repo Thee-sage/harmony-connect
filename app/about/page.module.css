@@ -1,0 +1,172 @@
+.thisWasOur {
+  position: absolute;
+  top: 207px;
+  left: 1019px;
+  font-size: 40px;
+  color: #fff;
+  display: inline-block;
+  width: 248px;
+  height: 675px;
+}
+.whatWeDo {
+  margin: 0;
+  color: #fff;
+}
+.userGeneratedQrPlaylists {
+  margin: 0;
+}
+.howWeDoContainer,
+.whatWeDoContainer {
+  position: absolute;
+  top: 1069px;
+  left: 86px;
+  font-size: 40px;
+  display: inline-block;
+  width: 808px;
+  height: 690px;
+}
+.howWeDoContainer {
+  top: 1837px;
+  left: 418px;
+  text-align: right;
+  height: 1024px;
+  color: #1e1e1e;
+}
+.wellCurrentlyNone {
+  margin: 0;
+  color: #000;
+}
+.contactUsWellContainer {
+  position: absolute;
+  top: 3020px;
+  left: 86px;
+  font-size: 40px;
+  display: inline-block;
+  width: 351px;
+  height: 217px;
+  color: #fff;
+}
+.desktop8Child {
+  position: absolute;
+  top: 197px;
+  left: 59px;
+  border-radius: 90px;
+  background-color: #fff;
+  width: 862px;
+  height: 684px;
+}
+.desktop8Inner,
+.desktop8Item {
+  position: absolute;
+  top: 272px;
+  left: 155px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  width: 106px;
+  height: 105px;
+}
+.desktop8Inner {
+  top: 303px;
+  left: 650px;
+  border-radius: 20.5px;
+  width: 177px;
+  height: 50px;
+}
+.jazz,
+.kagaminiutsuru {
+  position: absolute;
+  top: 308px;
+  left: 710px;
+  display: inline-block;
+  width: 75px;
+  height: 34px;
+}
+.kagaminiutsuru {
+  left: 286px;
+  width: 233px;
+  height: 36px;
+}
+.imageeeeee1Icon,
+.thisIsA {
+  position: absolute;
+  left: 183px;
+}
+.thisIsA {
+  top: 438px;
+  display: inline-block;
+  width: 205px;
+  height: 98px;
+}
+.imageeeeee1Icon {
+  top: 536px;
+  width: 261px;
+  height: 267px;
+  object-fit: cover;
+}
+.download11,
+.download1Icon,
+.icon,
+.wocjbdmvl1Icon {
+  position: absolute;
+  top: 448px;
+  left: 650px;
+  width: 46px;
+  height: 41px;
+  object-fit: cover;
+}
+.download11,
+.download1Icon,
+.icon {
+  top: 517px;
+  height: 43px;
+}
+.download11,
+.download1Icon {
+  top: 603px;
+  width: 56px;
+  height: 54px;
+}
+.download1Icon {
+  top: 685px;
+  left: 646px;
+  width: 54px;
+  height: 62px;
+}
+.comments,
+.inviteToCommunity,
+.like,
+.scan2listen {
+  position: absolute;
+  top: 459px;
+  left: 728px;
+  display: inline-block;
+  width: 62px;
+  height: 36px;
+}
+.comments,
+.inviteToCommunity,
+.scan2listen {
+  top: 698px;
+  width: 167px;
+  height: 49px;
+}
+.inviteToCommunity,
+.scan2listen {
+  top: 612px;
+  width: 193px;
+  height: 36px;
+}
+.inviteToCommunity {
+  top: 517px;
+}
+.desktop8 {
+  position: relative;
+  background-color: #00bf4c;
+  width: 1300px;
+  height: 3277px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 32px;
+  color: #000;
+  font-family: Inter;
+}

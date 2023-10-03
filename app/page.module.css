@@ -1,0 +1,178 @@
+.welcomeToHarmony {
+  margin: 0;
+}
+.connect,
+.welcomeToHarmonyContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 891px;
+  height: 311px;
+}
+.connect {
+  top: 116px;
+  left: 409px;
+  color: #1e1e1e;
+  width: 522.72px;
+  height: 148.32px;
+}
+.welcomeToHarmonyParent {
+  position: absolute;
+  top: 220px;
+  left: 39px;
+  width: 931.72px;
+  height: 311px;
+  font-size: 96px;
+}
+.anAppUniting {
+  color: #1e1e1e;
+}
+.anAppUniting,
+.blankLine {
+  margin-block-start: 0;
+  margin-block-end: 30px;
+}
+.anAppUnitingContainer {
+  position: absolute;
+  top: 2598px;
+  left: 34px;
+  font-size: 40px;
+  font-weight: 500;
+  display: inline-block;
+  width: 748px;
+}
+.enthusiastsToConnect {
+  position: absolute;
+  top: 1076px;
+  left: 52px;
+  color: #1e1e1e;
+}
+.peopleFromTheir {
+  position: absolute;
+  top: 1153px;
+  left: 52px;
+  display: inline-block;
+  width: 779px;
+}
+.loveForMusic {
+  position: absolute;
+  top: 1230px;
+  left: 50px;
+  color: #1e1e1e;
+}
+.anAppMade {
+  position: absolute;
+  top: 994px;
+  left: 52px;
+  display: inline-block;
+  width: 795px;
+  height: 82px;
+}
+.graphWrapper,
+.groupChild {
+  position: absolute;
+  top: 2001px;
+  left: 124px;
+  width: 187px;
+  height: 77px;
+}
+.groupChild {
+  top: 0;
+  left: 0;
+  border-radius: 142.5px;
+  background-color: #c1ff72;
+  width: 332px;
+  height: 143px;
+}
+.graphContainer,
+.rectangleParent {
+  position: absolute;
+  top: 33px;
+  left: 72px;
+  width: 187px;
+  height: 77px;
+}
+.rectangleParent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 1648px;
+  left: 52px;
+  width: 332px;
+  height: 143px;
+}
+.figpieIcon {
+  position: absolute;
+  top: 1819.5px;
+  left: 36.5px;
+  width: 384px;
+  height: 365px;
+}
+.toLogIn {
+  color: #fff;
+}
+.toExploreFurtherContainer {
+  position: absolute;
+  top: 5098px;
+  left: 43px;
+  font-size: 36px;
+  font-weight: 500;
+  display: inline-block;
+  width: 760px;
+  height: 149px;
+  color: #1e1e1e;
+}
+.frameChild {
+  position: relative;
+  background-color: #c1ff72;
+  width: 251px;
+  height: 5306px;
+}
+.frame {
+  position: absolute;
+  top: 210px;
+  left: 1050px;
+  width: 250px;
+  height: 5200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.desktop1 {
+  background-color: #00bf4c;
+  width: 1300px;
+  height: 5466px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 48px;
+  color: #fff;
+  font-family: Inter;
+}
+
+.graph1 {
+  position: absolute;
+  top: 1680px; /* Adjust this value to move the text higher or lower */
+  left: 124px; /* Adjust this value to move the text left or right */
+  width: 187px;
+  height: 77px;
+  text-align: left;
+  font-size: 64px;
+  color: #00bf4c;
+  font-family: Inter;
+  z-index: 1; /* Set a higher z-index to ensure it's on top */
+}
+
+.graph {
+  position: absolute;
+  width: 187px;
+  height: 77px;
+  text-align: left;
+  font-size: 64px;
+  color: #00bf4c;
+  font-family: Inter;
+  z-index: 0; /* Set a lower z-index to place it behind .graph1 */
+}

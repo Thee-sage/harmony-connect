@@ -1,0 +1,97 @@
+/* Set common styles for specific sections */
+.about,
+.profile,
+.signIn,
+.signUp {
+  position: absolute;
+  top: 78px;
+  display: inline-block;
+  height: 40px;
+}
+
+/* Remove underlines and set text color for specific anchor elements */
+.about a,
+.profile a,
+.signIn a,
+.signUp a {
+  text-decoration: none; /* Remove underlines */
+  color: inherit; /* Inherit text color from parent element */
+}
+
+/* Styles for the About section */
+.about {
+  left: 179px;
+  color: #ffffff;
+  width: 140px;
+}
+.profile {
+  left: 179px;
+  color: #000000;
+  width: 140px;
+}
+/* Styles for the Profile, Sign In, and Sign Up sections */
+.profile,
+.signIn,
+.signUp {
+  left: 330px;
+  width: 145px;
+}
+
+/* Styles for Sign In and Sign Up */
+.signIn {
+  top: 77px;
+  left: 960px;
+  width: 166px;
+  height: 45px;
+}
+
+/* Styles for Sign Up */
+.signUp {
+  left: 1120px;
+  color: #000000;
+  width: 172px;
+  height: 40px;
+  text-decoration: none; /* Remove underlines */
+  display: inline-block;
+  width: 137px;
+  height: 47px;
+  position: absolute;
+  top: 78px;
+}
+
+/* Styles for the Home link */
+.home a {
+  text-decoration: none; /* Remove underlines */
+  color: var(--color-black); /* Set text color */
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  top: 78px;
+  left: 27px;
+}
+
+/* Styles for the desktop2 container */
+.desktop2 {
+  position: relative;
+  background-color: #00bf4c;
+  width: 1300px;
+  height: 150px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 48px;
+  color: #ffffff;
+  font-family: Inter;
+}
+.signout {
+  left: 1040px;
+  color: #000000;
+  width: 172px;
+  height: 40px;
+  text-decoration: none; /* Remove underlines */
+  display: inline-block;
+  width: 137px;
+  height: 47px;
+  position: absolute;
+  top: 37px;
+}
