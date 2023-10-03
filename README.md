@@ -1,8 +1,13 @@
-this is the creator of the repository and the developer who made it,and the tech stack includes various libraries of react,like qr code react,html 2 canvas and we have primarly used firebase for authorisation and database,and tailwind css,and it is made on next js,you could expect the highest level of use of firebase, and react and i am still not that good at css so pardon me for that.
-Video will be soon released
-please if you have any changes for it please tell me
-thank you this project means a lot to me
-may whoever finds it can use all the code written here for their use
+
+this is the creator of the repository and the developer who made it,and the tech stack includes various libraries of react,like qr code react,html 2 canvas and i have primarly used firebase for authorisation and database,and tailwind css,and it is made on next js,you could expect the highest level of use of firebase, and react and i am still not that good at css so pardon me for that. Video will be soon released please if you have any changes for it please tell me thank you this project means a lot to me may whoever finds it can use all the code written here for their use
+
+
+
+i will soon write up changes in css and add more descriptions for the project 
+
+
+
+
 
 
 
