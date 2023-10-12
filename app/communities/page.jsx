@@ -20,13 +20,7 @@ import { BiShow } from "react-icons/bi";
 import { AiOutlineCopy } from "react-icons/ai";
 import { FaHandsHelping } from "react-icons/fa";
 const firebaseConfig = {
-  apiKey: "AIzaSyAYlyB4ppiTZJ4PIeCHrg7FRGN9wQDP8n4",
-  authDomain: "harmony-connect-a47ec.firebaseapp.com",
-  projectId: "harmony-connect-a47ec",
-  storageBucket: "harmony-connect-a47ec.appspot.com",
-  messagingSenderId: "998376996522",
-  appId: "1:998376996522:web:19d25511bc569c60d41ad3",
-  measurementId: "G-4QCHFQL992",
+
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
