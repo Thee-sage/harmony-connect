@@ -9,6 +9,7 @@ import {
 } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
+import styles from "app/yourposts/page.module.css";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAYlyB4ppiTZJ4PIeCHrg7FRGN9wQDP8n4",
@@ -153,10 +154,11 @@ const Desktop5 = () => {
   }, [db, userPosts]);
 
   return (
-    <div>
+    <div className={styles.vectorParent}>
       {error && <p>Error: {error}</p>}
       {userData && (
         <div>
+          <h1>Your account</h1>
           <div>
             <p>{userData.name}</p>
             <div>
@@ -176,38 +178,41 @@ const Desktop5 = () => {
         </div>
       )}
       <div>
-        <h1>Your Posts</h1>
         {error && <p>Error: {error}</p>}
-        {userPosts.map((post, index) => (
-          <div key={index}>
-            <h2>Post {index + 1}</h2>
-            <p>Text: {post.text}</p>
-            <p>Like Count: {post.likeCount}</p>
-            <p>Genre: {post.genre}</p>
-            <p>Uploaded on: {post.timestamp?.toDate().toLocaleString()}</p>
-            <img alt="" src={post.downloadURL} />
-            <h1> caption: {post.caption}</h1>
+        <div>
+          {userPosts.map((post, index) => (
+            <div key={index}>
+              <h2>Post {index + 1}</h2>
+              <p>the encoded data: {post.text}</p>
 
-            {/* Add a button to toggle comments */}
-            <button onClick={() => toggleComments(index)}>
-              {post.showComments ? "Hide Comments" : "Show Comments"}
-            </button>
+              <p>Genre: {post.genre}</p>
+              <p>Uploaded on: {post.timestamp?.toDate().toLocaleString()}</p>
+              <img alt="" src={post.downloadURL} />
+              <h1> caption: {post.caption}</h1>
+              <p>like count :{post.superlikesCount}</p>
+              <p>communityid:{post.communityId}</p>
 
-            {/* Render comments under each post */}
-            {post.showComments && (
-              <div>
-                <h3>Comments:</h3>
-                {post.comments &&
-                  post.comments.map((comment, commentIndex) => (
-                    <div key={commentIndex}>
-                      <p>Comment {commentIndex + 1}</p>
-                      <p>Text: {comment.text}</p>
-                    </div>
-                  ))}
-              </div>
-            )}
-          </div>
-        ))}
+              {/* Add a button to toggle comments */}
+              <button onClick={() => toggleComments(index)}>
+                {post.showComments ? "Hide Comments" : "Show Comments"}
+              </button>
+
+              {/* Render comments under each post */}
+              {post.showComments && (
+                <div>
+                  <h3>Comments:</h3>
+                  {post.comments &&
+                    post.comments.map((comment, commentIndex) => (
+                      <div key={commentIndex}>
+                        <p>Comment {commentIndex + 1}</p>
+                        <p>Text: {comment.text}</p>
+                      </div>
+                    ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

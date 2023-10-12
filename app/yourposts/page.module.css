@@ -1,0 +1,11 @@
+.vectorParent {
+  position: relative;
+  background-color: #018435;
+  width: 1300px;
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: 36px;
+  color: #000;
+  font-family: Inter;
+}

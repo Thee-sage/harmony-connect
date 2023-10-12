@@ -30,11 +30,11 @@
   left: 418px;
   text-align: right;
   height: 1024px;
-  color: #1e1e1e;
+  color: #ffffff;
 }
 .wellCurrentlyNone {
   margin: 0;
-  color: #000;
+  color: #ffffff;
 }
 .contactUsWellContainer {
   position: absolute;
@@ -161,7 +161,7 @@
 }
 .desktop8 {
   position: relative;
-  background-color: #00bf4c;
+  background-color: #023e1a;
   width: 1300px;
   height: 3277px;
   overflow: hidden;

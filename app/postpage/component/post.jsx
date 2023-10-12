@@ -24,6 +24,10 @@ import {
   uploadString,
   getDownloadURL,
 } from "firebase/storage";
+import { AiOutlineCheck } from "react-icons/ai";
+import { AiOutlineDelete } from "react-icons/ai";
+import { MdDelete } from "react-icons/md";
+import styles from "app/postpage/page.module.css";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAYlyB4ppiTZJ4PIeCHrg7FRGN9wQDP8n4",
@@ -62,12 +66,13 @@ function Post() {
   const [liked, setLiked] = useState(false);
   const [text, setText] = useState("");
   const [qrCodeData, setQRCodeData] = useState("");
+  const [qrCodesData, setQRCodesData] = useState([]);
   const [qrCodeImage, setQRCodeImage] = useState(null);
   const [downloadURL, setDownloadURL] = useState("");
   const [caption, setCaption] = useState("");
   const userId = auth.currentUser ? auth.currentUser.uid : null;
   const [communityId, setCommunityId] = useState(""); // State variable to capture the community ID input
-
+  const [postQRCodeText, setPostQRCodeText] = useState("");
   const handleCommunityIdChange = (e) => {
     setCommunityId(e.target.value);
   };
@@ -93,10 +98,11 @@ function Post() {
   const handleTextChange = (e) => {
     setText(e.target.value);
   };
-
   const generateQRCode = () => {
-    setQRCodeData(text);
-    setQRCodeText(text);
+    const generatedText = text; // Store the text before setting it in state
+    setQRCodeData(generatedText);
+    setQRCodeText(generatedText);
+    setPostQRCodeText(generatedText); // Update postQRCodeText with the generated text
   };
 
   const generateQRCodeImage = async () => {
@@ -110,6 +116,7 @@ function Post() {
       console.error("Error generating QR Code image:", error);
     }
   };
+
   const handleAddCaption = async () => {
     try {
       // Add the caption to the Firestore database
@@ -131,7 +138,7 @@ function Post() {
   };
   const uploadQRCodeToFirebase = async () => {
     if (qrCodeImage) {
-      const qrCodeRef = ref(storage, "qr-codes/qrcode.png");
+      const qrCodeRef = ref(storage, `qr-codes/${qrCodeText}.png`);
 
       try {
         // Upload the image
@@ -160,7 +167,6 @@ function Post() {
       }
     }
   };
-
   useEffect(() => {
     if (qrCodeData) {
       generateQRCodeImage();
@@ -172,31 +178,28 @@ function Post() {
   useEffect(() => {
     async function fetchQRCodeText() {
       try {
-        const qrCodeDocRef = doc(db, "qrcodes");
-        const qrCodeDocSnapshot = await getDoc(qrCodeDocRef);
+        const qrcodesCollectionRef = collection(db, "qrcodes");
+        const qrcodesQuerySnapshot = await getDocs(qrcodesCollectionRef);
 
-        if (qrCodeDocSnapshot.exists()) {
-          const qrCodeData = qrCodeDocSnapshot.data();
-          if (qrCodeData.text) {
-            setQRCodeText(qrCodeData.text);
-            console.log("QR Code text retrieved:", qrCodeData.text);
-          } else {
-            console.log("QR Code text is empty or undefined.");
-          }
-        } else {
-          console.log("QR Code document does not exist.");
-        }
+        const qrCodesData = [];
+        qrcodesQuerySnapshot.forEach((doc) => {
+          const qrCodeData = doc.data();
+          qrCodesData.push(qrCodeData.text); // Assuming you want to store QR code texts in qrCodesData array
+        });
+
+        console.log("QR Code texts retrieved:", qrCodesData);
+        setQRCodesData(qrCodesData); // Set the QR code texts in the state
       } catch (error) {
-        console.error("Error fetching QR Code text:", error);
+        console.error("Error fetching QR Code texts:", error);
       }
     }
 
     fetchQRCodeText();
-  }, []);
+  }, [db]); // Add db as a dependency here
 
   const addPostToDatabase = async () => {
     try {
-      if (qrCodeText.trim() === "") {
+      if (postQRCodeText.trim() === "") {
         return;
       }
       if (!userId) {
@@ -207,12 +210,12 @@ function Post() {
       const userEmail = user ? user.email : null;
 
       await addDoc(collection(db, "posts"), {
-        text: qrCodeText,
+        text: postQRCodeText,
         likeCount,
         commentCount,
         downloadURL,
         userId,
-        userEmail, // Use the downloadURL obtained from storage
+        userEmail,
         genre: selectedGenre,
         caption,
         communityId: communityId,
@@ -224,7 +227,6 @@ function Post() {
       console.error("Error adding post:", error);
     }
   };
-
   useEffect(() => {
     // Create a query for comments sorted by timestamp
     const commentsQuery = query(
@@ -386,37 +388,54 @@ function Post() {
   }, [db, qrCodeText]);
 
   return (
-    <div className="post">
-      <div className="post-header">
-        <img
-          src="user-profile-image.jpg"
-          alt="User Profile"
-          className="profile-picture"
-        />
-        <span className="user-name">Username</span>
-      </div>
+    <div className={styles.desktop9}>
+      <div className={styles.desktop9Item} />
+      <div className="post-header"></div>
       <div>
+        <div className={styles.desktop9Child2} />
         <input
           type="text"
           placeholder="Community ID"
           value={communityId}
           onChange={handleCommunityIdChange}
+          style={{
+            border: "none",
+            outline: "none",
+            fontSize: "18px",
+          }}
+          className={styles.enterTheCommunity}
         />
       </div>
       <div className="post-content">
         <div className="qr-code-generator">
+          <div className={styles.desktop9Child5} />
           <input
             type="text"
-            placeholder="Text for QR code"
+            placeholder="Text for QR code.."
             value={text}
             onChange={handleTextChange}
+            className={styles.enterQrCode}
+            style={{
+              border: "none",
+              outline: "none",
+              fontSize: "18px",
+            }}
           />
-          <button onClick={generateQRCode}>Generate QR Code</button>
-          {qrCodeText && <QRCode value={qrCodeText} />}
+          <button className={styles.createQrCode} onClick={generateQRCode}>
+            Generate QR Code
+          </button>
+          {qrCodeText && (
+            <QRCode className={styles.qrcode1Icon} value={qrCodeText} />
+          )}
         </div>
-
-        <p className="post-text">This is the post text.</p>
+        <div className={styles.desktop9Child1} />
         <select
+          className={styles.selectAGenre}
+          style={{
+            border: "none",
+            outline: "none",
+            fontSize: "18px",
+          }}
           value={selectedGenre}
           onChange={(e) => setSelectedGenre(e.target.value)}
         >
@@ -431,47 +450,97 @@ function Post() {
         </select>
       </div>
       <div className="post-actions">
-        <button onClick={handleComment}>
-          <i className="fas fa-comment"></i> Comment ({commentCount})
-        </button>
+        <div className={styles.rectangleDiv} />
         <input
+          className={styles.captionIsGoing}
           type="text"
           placeholder="Add a caption..."
           value={caption}
           onChange={(e) => setCaption(e.target.value)}
+          style={{
+            border: "none",
+            outline: "none",
+            fontSize: "18px",
+          }}
         />
+        <div className={styles.desktop9Inner} />
 
-        {/* Button to add caption */}
-        <button onClick={handleAddCaption}>Add Caption</button>
-        <button onClick={addPostToDatabase}>Add Post</button>
-        <button onClick={handleDeletePost}>Delete Post</button>
+        <button
+          className={styles.uploadCaptions}
+          onClick={handleAddCaption}
+          style={{ fontSize: "24px", outline: "none", border: "none" }}
+        >
+          <AiOutlineCheck />
+        </button>
+        <div className={styles.desktop9Child4} />
+        <button
+          className={styles.wannaPostIt}
+          style={{
+            border: "none",
+            outline: "none",
+            fontSize: "18px",
+          }}
+          onClick={addPostToDatabase}
+        >
+          wannaPostIt?
+        </button>
+        <p className={styles.orchangedyourmind}>
+          or changed your mind so delete it?
+        </p>
+        <button className={styles.delete} onClick={handleDeletePost}>
+          <MdDelete />
+        </button>
+
         {qrCodeData && (
-          <div id="qrcode-container">
-            <QRCode value={qrCodeData} size={128} />
+          <div
+            id="qrcode-container"
+            className={styles.qrcode1Icon}
+            style={{ width: "290px" }}
+          >
+            <QRCode value={qrCodeData} size={250} />
           </div>
         )}
         {qrCodeImage && (
           <div>
-            <button onClick={uploadQRCodeToFirebase}>
-              Upload QR Code to Firebase
+            <button
+              className={styles.uploadQrCode}
+              onClick={uploadQRCodeToFirebase}
+            >
+              Confirm
             </button>
           </div>
         )}
         <div>
-          <h3>Comments</h3>
-          <ul>
-            {comments.map((comment, index) => (
-              <li key={index}>
-                {comment.text}
-                <button onClick={() => handleDeleteComment(comment.id)}>
-                  Delete
-                </button>
-              </li>
-            ))}
-          </ul>
+          <div className={styles.comment12comment2}>
+            <ul className={styles.commentsList}>
+              {comments.map((comment, index) => (
+                <li key={index} className={styles.comment1}>
+                  <span>{comment.text}</span>
+                  <button
+                    style={{
+                      fontSize: "20px",
+                      outline: "none",
+                      border: "none",
+                    }}
+                    onClick={() => handleDeleteComment(comment.id)}
+                  >
+                    <AiOutlineDelete />
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className={styles.desktop9Child3} />
           <input
             type="text"
             placeholder="Add a comment..."
+            style={{
+              border: "none",
+              outline: "none",
+              fontSize: "18px",
+            }}
+            className={styles.commentSomething}
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
             onKeyUp={(e) => {

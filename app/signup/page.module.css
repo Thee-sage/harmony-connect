@@ -1,0 +1,381 @@
+.desktop7Child,
+.desktop7Item {
+  position: absolute;
+  top: 223px;
+  left: 1191px;
+  background-color: #c1ff72;
+  width: 189px;
+  height: 1274px;
+}
+.desktop7Item {
+  top: 158px;
+  left: 55px;
+  border-radius: 138px;
+  background-color: #000;
+  width: 914px;
+  height: 1342px;
+}
+.desktop7Child1,
+.desktop7Inner,
+.rectangleDiv {
+  position: absolute;
+  top: 718px;
+  left: 394px;
+  border-radius: 12px;
+  background-color: #fff;
+  width: 405px;
+  height: 55px;
+}
+.desktop7Child1,
+.rectangleDiv {
+  top: 951px;
+  left: 393px;
+}
+.desktop7Child1 {
+  top: 1040px;
+  left: 586px;
+  background-color: #d9d9d9;
+  width: 213px;
+  height: 210px;
+}
+.desktop7Child9 {
+  position: absolute;
+  top: 870px;
+  left: 394px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  width: 405px;
+  height: 55px;
+}
+.desktop7Child2 {
+  position: absolute;
+  top: 1040px;
+  left: 383px;
+  border-radius: 13px;
+  background-color: #fff;
+  width: 159px;
+  height: 52px;
+  font-size: 30px;
+}
+.desktop7Child3,
+.desktop7Child4 {
+  position: absolute;
+  top: 1040px;
+  left: 394px;
+  border-radius: 12px;
+  background-color: #fff;
+  width: 167px;
+  height: 55px;
+}
+.desktop7Child3,
+.desktop7Child4 {
+  top: 1363px;
+  left: 299px;
+  border-radius: 36px;
+  width: 426px;
+  height: 91px;
+}
+.desktop7Child4 {
+  top: 794px;
+  left: 394px;
+  border-radius: 12px;
+  width: 405px;
+  height: 55px;
+}
+.blankLine {
+  margin: 0;
+  color: #fff;
+}
+.onboarding {
+  position: absolute;
+  top: 323px;
+  left: 168px;
+  font-size: 64px;
+  display: inline-block;
+  width: 502px;
+  height: 94px;
+  color: #8fff00;
+}
+.inputYourInformation {
+  margin: 0;
+}
+.bio,
+.gmail,
+.inputYourInformationContainer,
+.name,
+.password,
+.profilePicture,
+.username {
+  position: absolute;
+  top: 438px;
+  left: 168px;
+  display: inline-block;
+  width: 519px;
+  height: 188px;
+}
+.bio,
+.gmail,
+.name,
+.profilePicture,
+.username {
+  top: 718px;
+  width: 178px;
+  height: 55px;
+}
+.bio,
+.gmail,
+.profilePicture,
+.username {
+  top: 794px;
+}
+.bio,
+.profilePicture,
+.username {
+  top: 944px;
+  left: 167px;
+  width: 179px;
+  height: 61px;
+}
+.profilePicture,
+.username {
+  top: 870px;
+  left: 168px;
+  width: 205px;
+  height: 49px;
+}
+.profilePicture {
+  top: 1005px;
+  height: 88px;
+}
+.desktop7Child5 {
+  position: absolute;
+  top: 872px;
+  left: 393px;
+  border-radius: 12px;
+  background-color: #fff;
+  width: 405px;
+  height: 55px;
+}
+.chooseFile,
+.submitForm {
+  position: absolute;
+  top: 1057px;
+  left: 425px;
+  font-size: 20px;
+  color: #000;
+  display: inline-block;
+  width: 105px;
+  height: 21px;
+}
+.submitForm {
+  top: 1385px;
+  left: 394px;
+  font-size: 40px;
+  width: 236px;
+  height: 47px;
+}
+.desktop7 {
+  position: relative;
+  background-color: #023e1a;
+  width: 1300px;
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: 36px;
+  color: #fff;
+  font-family: Inter;
+}
+
+/* Add your other styles above */
+
+.inputWithValue {
+  color: #000000;
+  font-size: 20px;
+}
+/* In your page.module.css file or a separate CSS file */
+.input-field {
+  font-size: 14px; /* Set the desired font size for the input fields */
+  /* Add any other styling properties if needed */
+}
+
+.password {
+  top: 1292px;
+  left: 167px;
+  height: 44px;
+}
+.desktop7Child6 {
+  position: absolute;
+  top: 1290px;
+  left: 393px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  width: 406px;
+  height: 55px;
+}
+.welcome {
+  margin: 0;
+}
+.welcomeJojojojogmailcom {
+  position: absolute;
+  top: 103px;
+  left: 64px;
+  color: #fff;
+  display: inline-block;
+  width: 631px;
+  height: 240px;
+}
+.desktop10Child {
+  position: absolute;
+  top: 160px;
+  left: 785px;
+  border-radius: 63px;
+  background-color: #fff;
+  width: 304px;
+  height: 126px;
+}
+.logdout {
+  position: absolute;
+  top: 194px;
+  left: 838px;
+  font-size: 45px;
+  color: #000;
+  display: flex; /* Make it a flex container */
+  align-items: center; /* Center align items vertically */
+  width: 280px;
+  height: 70px;
+}
+.logdout button {
+  display: flex; /* Make the button a flex container */
+  align-items: center; /* Center align items vertically */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer;
+}
+
+.desktop10Item {
+  position: absolute;
+  top: 1394px;
+  left: 422px;
+  border-radius: 40px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 348px;
+  height: 100px;
+}
+
+.profilde {
+  position: absolute;
+  top: 1394px;
+  left: 465px;
+  font-size: 33px;
+  color: #000000;
+  display: inline-block;
+  width: auto; /* Remove fixed width */
+  height: 42px;
+}
+
+.profilde a {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underlines for the link */
+}
+
+.profilde button {
+  display: flex; /* Make the button a flex container */
+  align-items: center; /* Center align items vertically */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer;
+}
+
+.desktop10Inner {
+  position: absolute;
+  top: 597px;
+  left: 596px;
+  border-radius: 78px;
+  background-color: #fff;
+
+  width: 520px;
+  height: 486px;
+}
+.yoshikagekira {
+  color: #fff;
+}
+.namesYoshikagekira,
+.usernasmeYoshikagekira {
+  position: absolute;
+  top: 681px;
+  left: 64px;
+  display: inline-block;
+  width: 352px;
+  height: 119px;
+}
+.usernasmeYoshikagekira {
+  top: 882px;
+}
+.yoshikagekira2 {
+  color: #fff;
+  font-size: 36px;
+}
+.bisoYoshikagekira {
+  position: absolute;
+  top: 1083px;
+  left: 64px;
+  display: inline-block;
+  width: 497px;
+  height: 223px;
+}
+.desktop10 {
+  position: relative;
+  background-color: #023e1a;
+  width: 1300px;
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: 48px;
+  color: #8fff00;
+  font-family: Inter;
+}
+.rectangleDivxx {
+  position: absolute;
+  top: 413px;
+  left: 64px;
+  border-radius: 31px;
+  background-color: #fff;
+  width: 532px;
+  height: 98px;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center items */
+  padding-left: 20px; /* Add some padding for spacing */
+}
+
+.viewYourProfile {
+  font-size: 40px;
+  display: inline-flex;
+  color: #000; /* Use inline-flex to keep icon and text in line */
+  align-items: center; /* Vertically center items */
+  gap: 10px; /* Add some spacing between icon and text */
+}
+.viewYourProfile button {
+  display: flex; /* Make the button a flex container */
+  align-items: center; /* Center align items vertically */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer;
+}
+.closeProfile {
+  font-size: 40px;
+  display: inline-flex;
+  color: #000; /* Use inline-flex to keep icon and text in line */
+  align-items: center; /* Vertically center items */
+  gap: 10px; /* Add some spacing between icon and text */
+}
+.closeProfile button {
+  display: flex; /* Make the button a flex container */
+  align-items: center; /* Center align items vertically */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer;
+}

@@ -13,7 +13,7 @@
 .connect {
   top: 116px;
   left: 409px;
-  color: #1e1e1e;
+  color: #ffffff;
   width: 522.72px;
   height: 148.32px;
 }
@@ -26,7 +26,7 @@
   font-size: 96px;
 }
 .anAppUniting {
-  color: #1e1e1e;
+  color: #ffffff;
 }
 .anAppUniting,
 .blankLine {
@@ -46,7 +46,7 @@
   position: absolute;
   top: 1076px;
   left: 52px;
-  color: #1e1e1e;
+  color: #ffffff;
 }
 .peopleFromTheir {
   position: absolute;
@@ -59,7 +59,7 @@
   position: absolute;
   top: 1230px;
   left: 50px;
-  color: #1e1e1e;
+  color: #ffffff;
 }
 .anAppMade {
   position: absolute;
@@ -122,7 +122,7 @@
   display: inline-block;
   width: 760px;
   height: 149px;
-  color: #1e1e1e;
+  color: #ffffff;
 }
 .frameChild {
   position: relative;
@@ -143,7 +143,7 @@
   justify-content: flex-start;
 }
 .desktop1 {
-  background-color: #00bf4c;
+  background-color: #023e1a;
   width: 1300px;
   height: 5466px;
   overflow: hidden;

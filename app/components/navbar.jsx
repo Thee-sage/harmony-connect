@@ -43,11 +43,9 @@ const Navbar = () => {
             <Link href="/about">About</Link>
           </li>
 
-          {!user ? (
-            <li className={styles.profile}>
-              <Link href="/profile">Profile</Link>
-            </li>
-          ) : null}
+          <li className={styles.profile}>
+            <Link href="/profile">Profile</Link>
+          </li>
         </ul>
         {loading ? null : !user ? (
           <ul>
